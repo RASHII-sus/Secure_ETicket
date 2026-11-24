@@ -1,0 +1,23 @@
+{
+  "include": [
+    "e_ticket_secure"
+  ],
+  "extraPaths": [
+    "e_ticket_secure/src"
+  ],
+  "pythonVersion": "3.13",
+  "pythonPlatform": "Windows",
+  "typeCheckingMode": "standard",
+  "reportOptionalSubscript": "none",
+  "reportOptionalMemberAccess": "none",
+  "reportOptionalCall": "none",
+  "reportOptionalIterable": "none",
+  "reportOptionalContextManager": "none",
+  "reportArgumentType": "none",
+  "reportCallIssue": "none",
+  "reportAttributeAccessIssue": "none",
+  "reportMissingTypeStubs": "none",
+  "reportUnknownVariableType": "none",
+  "reportUnknownMemberType": "none",
+  "reportUnknownArgumentType": "none"
+}

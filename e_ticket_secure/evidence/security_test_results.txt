@@ -1,0 +1,63 @@
+======================================================================
+  SECURITY TEST EVIDENCE – Secure E-Ticketing Prototype
+======================================================================
+[PASS] Invalid credentials rejected
+       → Login with wrong password correctly denied
+[PASS] Valid attendee login
+[PASS] Attendee cannot create event (role check)
+       → Only admin can create events.
+[PASS] Attendee cannot redeem tickets (role check)
+       → Only gate staff or admin can validate tickets.
+[PASS] Attendee can book seats
+       → Booked 2 seat(s). Booking ID: 2
+[PASS] Ticket generation (owner)
+       → Ticket generated successfully.
+[PASS] Forged/altered token rejected
+       → Invalid ticket: not found.
+[PASS] Valid ticket first redemption succeeds
+       → VALID – Entry granted. Ticket #2 redeemed.
+[PASS] Replay / second redemption denied
+       → Ticket already redeemed. Entry denied.
+[PASS] Signature alone insufficient (already redeemed)
+       → Control requires both valid HMAC AND non-redeemed state
+[PASS] Overbooking attempt rejected
+       → Only 46 seats left.
+[PASS] Non-owner cannot generate ticket for foreign booking
+       → Access denied: not your booking.
+[PASS] Attendee cannot read audit log
+[PASS] Admin can read audit log
+       → 5 recent entries visible
+[PASS] SQL injection on login rejected
+       → Parameterized queries prevent injection
+
+======================================================================
+  RESULTS: 15/15 tests PASSED
+======================================================================
+  PASS | Invalid credentials rejected
+         Login with wrong password correctly denied
+  PASS | Valid attendee login
+  PASS | Attendee cannot create event (role check)
+         Only admin can create events.
+  PASS | Attendee cannot redeem tickets (role check)
+         Only gate staff or admin can validate tickets.
+  PASS | Attendee can book seats
+         Booked 2 seat(s). Booking ID: 2
+  PASS | Ticket generation (owner)
+         Ticket generated successfully.
+  PASS | Forged/altered token rejected
+         Invalid ticket: not found.
+  PASS | Valid ticket first redemption succeeds
+         VALID – Entry granted. Ticket #2 redeemed.
+  PASS | Replay / second redemption denied
+         Ticket already redeemed. Entry denied.
+  PASS | Signature alone insufficient (already redeemed)
+         Control requires both valid HMAC AND non-redeemed state
+  PASS | Overbooking attempt rejected
+         Only 46 seats left.
+  PASS | Non-owner cannot generate ticket for foreign booking
+         Access denied: not your booking.
+  PASS | Attendee cannot read audit log
+  PASS | Admin can read audit log
+         5 recent entries visible
+  PASS | SQL injection on login rejected
+         Parameterized queries prevent injection

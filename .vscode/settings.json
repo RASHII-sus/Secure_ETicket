@@ -1,0 +1,20 @@
+{
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/e_ticket_secure/src"
+    ],
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/e_ticket_secure/src"
+    ],
+    "python.analysis.typeCheckingMode": "standard",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportOptionalSubscript": "none",
+        "reportOptionalMemberAccess": "none",
+        "reportOptionalCall": "none",
+        "reportOptionalIterable": "none",
+        "reportOptionalContextManager": "none",
+        "reportArgumentType": "none",
+        "reportCallIssue": "none",
+        "reportAttributeAccessIssue": "none",
+        "reportMissingTypeStubs": "none"
+    }
+}

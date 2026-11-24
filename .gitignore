@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# SQLite databases & runtime keys
+*.db
+*.db-wal
+*.db-shm
+*.key
+eticket_secure_data/
+
+# OS specific
+.DS_Store
+Thumbs.db
