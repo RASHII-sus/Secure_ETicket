@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 """
 Secure Online Event Booking & E-Ticketing Prototype
-===================================================
-Information Security CCP Project - Riphah International University
-
 Implements:
 - Role-based access control (attendee, gate_staff, admin)
 - Ownership checks for bookings
@@ -14,9 +11,6 @@ Implements:
 - Parameterized queries (SQL injection prevention)
 - Restricted audit logging
 - Data minimization principles
-
-Author: Hamza Rahim, Rashid Islam
-Instructor: Dr. Jawaid Iqbal
 """
 
 import sqlite3

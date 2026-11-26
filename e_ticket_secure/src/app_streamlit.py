@@ -1,15 +1,4 @@
 #!/usr/bin/env python3
-"""
-Secure Online Event Booking & E-Ticketing System
-=================================================
-Streamlit Web Frontend (Polished & Modern)
-Information Security – Complex Computing Problem (CCP)
-Faculty of Computing, Riphah International University
-
-Authors: Hamza Rahim (56776), Rashid Islam (54384)
-Instructor: Dr. Jawaid Iqbal
-"""
-
 import streamlit as st
 import sys
 import os
@@ -952,7 +941,7 @@ def page_admin():
 
         with g_c2:
             if gen_btn:
-                ok, msg, ticket = app.generate_ticket(int(bid))
+                ok, msg, ticket = app.generate_ticket(bid)
                 if ok and ticket and "token" in ticket:
                     st.success(f"✓ {msg}")
                     st.markdown(f'<div class="ticket-token-box">{ticket["token"]}</div>', unsafe_allow_html=True)
